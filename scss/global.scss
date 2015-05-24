@@ -1,6 +1,7 @@
 @import "bourbon/bourbon";
 @import "_mixins.scss";
 @import "_normalize.scss";
+@import "_prism.scss";
 
 * {
 	@include box-sizing(border-box);

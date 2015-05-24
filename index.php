@@ -89,6 +89,7 @@
 		</div>
 
 	</footer>
-	
+
+	<script src="js/prism.min.js"></script>
 </body>
 </html>
