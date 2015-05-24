@@ -1,1 +1,76 @@
 @import "bourbon/bourbon";
+@import "_mixins.scss";
+@import "_normalize.scss";
+
+* {
+	@include box-sizing(border-box);
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background: #f8f6f7;
+}
+
+main {
+	min-height: 100%;
+	margin-bottom: -70px;
+
+	&:after {
+		content: '';
+		height: 70px;
+	}
+}
+
+.container {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+	@include clearfix;
+}
+
+header, footer {
+	height: 70px;
+	line-height: 70px;
+	background: #fff;
+
+	.logo {
+		float: left;
+	}
+
+	.aux {
+		float: right;
+	}
+
+	a {
+		text-decoration: none;
+		font-size: em(20);
+	}
+}
+
+header {
+	box-shadow: 0 1px rgba(0,0,0,0.1);
+}
+
+footer {
+	box-shadow: 0 -1px rgba(0,0,0,0.1);
+}
+
+.column {
+	width: 100%;
+
+	@include MQ {
+		float: left;
+		width: 32%;
+		margin-right: 2%;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+.module {
+	margin-top: 2em;
+}
