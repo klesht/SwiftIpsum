@@ -39,10 +39,17 @@ header, footer {
 
 	.logo {
 		float: left;
+		font-family: 'Racing Sans One', cursive;
+		color: #3c3c3c;
+		span {
+			color: #e97820;
+		}
 	}
 
 	.aux {
 		float: right;
+		font-family: Consolas, Monaco, 'Andale Mono', monospace;
+		color: #3c3c3c;
 	}
 
 	a {
@@ -57,6 +64,14 @@ header {
 
 footer {
 	box-shadow: 0 -1px rgba(0,0,0,0.1);
+	
+	.aux {
+		display: none;
+
+		@include MQ {
+			display: inline;
+		}
+	}	
 }
 
 .column {
