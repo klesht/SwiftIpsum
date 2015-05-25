@@ -1,2 +1,2 @@
 # SwiftIpsum
-Project files for Swiftipsum.com
+SwiftIpsum is a collection of Lorem Ipsum patterns.
